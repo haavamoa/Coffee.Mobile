@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Mobile.Android", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Mobile.iOS", "Coffee.Mobile.iOS\Coffee.Mobile.iOS.csproj", "{E4501CA8-8BEB-4BC6-8189-864DF736E6B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Mobile", "Coffee.Mobile\Coffee.Mobile.csproj", "{D7C76F9F-2EFA-4D2F-852A-96F4D49D57AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coffee.Mobile", "Coffee.Mobile\Coffee.Mobile.csproj", "{D7C76F9F-2EFA-4D2F-852A-96F4D49D57AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
