@@ -1,0 +1,26 @@
+{
+    "name": "Hario V60",
+    "img" : "https://rawcdn.githack.com/andmos/Coffee/27bfd82a30bdab2cde494e57d30e9cf4745d6de0/img/V60.svg",
+    "recipes" : [
+        {
+            "name" : "Single cup, full bodied", 
+            "introduction" : "Always use clean water. Remember to moisten the filter. This method works great with light, sweet coffee (like African), giving it a full-body taste.",
+            "grind" : "medium-fine",
+            "coffee" : 17,
+            "water" : 230,
+            "bloom" : 35,
+            "instructions" : "Pre-heat the cup or serving kettle.\nMoister the filter and put it in the V60, on top of the cup or kettle.\nAdd the coffee and make a little well in the middle of the grounds with a finger.\nAdd 35 gr of water in circular movements, starting in the middle of the coffee. Make sure all the grounds are wet.\nSet a timer for 35 seconds and let the coffee bloom.\nAfter 35 seconds, pour water up to 150 grams in circular movements.\nAt 150 grams, give the V60 a couple of swirls to keep the coffee bed flat. This helps with extraction.\nPour the rest of the water in a circular fashion, up to 230 grams.\nGive the V60 a last swirl.\nThe brew should take between 2 minutes / 2 minutes and 30 seconds.",
+            "note" : "The total brew time may vary depending on the paper filter used in the V60, as well as the grind."
+        },
+        {
+            "name" : "Single cup, 'The Loong pour' ", 
+            "introduction" : "Always use clean water. Remember to moisten the filter. This method works great with light, sweet coffee (like African), giving it a full-body taste.",
+            "grind" : "medium-fine",
+            "coffee" : 15,
+            "water" : 247,
+            "bloom" : 40,
+            "instructions" : "Pre-heat the cup or serving kettle.\nMoister the filter and put it in the V60, on top of the cup or kettle.\nAdd the coffee and make a little well in the middle of the grounds with a finger.\nAdd 40 gr of water in circular movements, starting in the middle of the coffee. Make sure all the grounds are wet.\nSet a timer for 40 seconds and let the coffee bloom.\nAfter 40 seconds, give the V60 a couple of swirls.\nPour all the water in a circular fashion all the way to 247 grams. Try to hit the 1:10 mark on the timer.\nGive the V60 a last swirl after hitting the 247 grams mark.\nThe brew should take around 2 minutes and 30 seconds.",
+            "note" : "The total brew time may vary depending on the paper filter used in the V60, as well as the grind."
+        }
+    ]
+}
