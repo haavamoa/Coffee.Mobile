@@ -1,4 +1,5 @@
 ﻿using System;
+using LightInject;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,10 @@ namespace Coffee.Mobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var container = new ServiceContainer(new ContainerOptions { EnablePropertyInjection = false });
+            container.RegisterFrom<CompositionRoot>();
+
+            MainPage = container.GetInstance<MainPage>();
         }
 
         protected override void OnStart()

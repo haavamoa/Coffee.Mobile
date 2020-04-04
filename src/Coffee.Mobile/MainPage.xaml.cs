@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Coffee.Mobile.ViewModels;
 using Xamarin.Forms;
 
 namespace Coffee.Mobile
@@ -13,9 +14,10 @@ namespace Coffee.Mobile
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage(MainViewModel mainViewModel)
         {
             InitializeComponent();
+            BindingContext = mainViewModel;
         }
     }
 }
