@@ -8,7 +8,7 @@
              mc:Ignorable="d"
              x:Class="Coffee.Mobile.MethodCard"
              x:DataType="{x:Type ViewModels:MethodViewModel}">
-    <Grid Padding="50" BackgroundColor="#D9A679">
+    <Grid Padding="50">
         <Grid.GestureRecognizers>
             <TapGestureRecognizer  Command="{Binding Source={RelativeSource AncestorType={x:Type ViewModels:MainViewModel}}, Path=SelectMethodCommand}"
                                    CommandParameter="{Binding .}"/>

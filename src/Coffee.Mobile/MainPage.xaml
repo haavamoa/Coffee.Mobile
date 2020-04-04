@@ -10,13 +10,16 @@
              xmlns:dxui="http://dips.xamarin.ui.com"
              mc:Ignorable="d"
              x:Class="Coffee.Mobile.MainPage"
-             x:DataType="{x:Type ViewModels:MainViewModel}">
+             x:DataType="{x:Type ViewModels:MainViewModel}"
+             Title="Coffee"
+             BackgroundColor="#A6754B">
 
     <dxui:ModalityLayout>
         <dxui:ModalityLayout.Behaviors>
             <dxui:SheetBehavior IsOpen="{Binding HasSelectedMethod}"
                                 VerticalContentAlignment="Fill"
                                 Position="0.9"
+                                BackgroundColor="#F2E2CE"
                                 BindingContextFactory="{Binding SelectedMethodFactory}">
                 <Mobile:MethodDetail />
             </dxui:SheetBehavior>

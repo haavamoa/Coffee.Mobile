@@ -6,6 +6,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ViewModels="clr-namespace:Coffee.Mobile.ViewModels;assembly=Coffee.Mobile"
              xmlns:System="clr-namespace:System;assembly=netstandard"
+             xmlns:Resources="clr-namespace:Coffee.Mobile.Resources;assembly=Coffee.Mobile"
              mc:Ignorable="d"
              x:Class="Coffee.Mobile.MethodDetail"
              x:DataType="{x:Type ViewModels:MethodViewModel}">
@@ -22,11 +23,13 @@
             <Label Grid.Row="0"
                    Grid.Column="0"
                    Text="{Binding Name}"
+                   VerticalTextAlignment="Center"
                    FontSize="30"
                    FontAttributes="Bold" />
             <Image Grid.Column="1"
+                   HorizontalOptions="End"
                    Source="{Binding Img}"
-                   HeightRequest="2" />
+                   HeightRequest="40" />
         </Grid>
         <ScrollView Grid.Row="1"
                     Padding="15"
@@ -44,6 +47,42 @@
                                    FontSize="20"
                                    FontAttributes="Bold" />
                             <Label Text="{Binding Introduction}" />
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0"
+                                       Text="{x:Static Resources:MaterialDesignIcons.Water}"
+                                       TextColor="CornflowerBlue"
+                                       FontSize="30"
+                                       VerticalTextAlignment="Center"
+                                       FontFamily="{StaticResource MaterialFontFamily}" />
+                                <Label Grid.Column="1"
+                                       VerticalTextAlignment="Center">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding Water}"/>
+                                            <Span Text=" gr"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </Grid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="1"
+                                       VerticalTextAlignment="Center">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding Coffee}"/>
+                                            <Span Text=" gr freshly  ground coffee"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </Grid>
                         </StackLayout>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>

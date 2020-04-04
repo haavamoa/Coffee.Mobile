@@ -11,7 +11,7 @@ namespace Coffee.Mobile.Services
     {
         public Task<List<string>> GetAvailableMethods()
         {
-            return Task.FromResult(new List<string>(){"V60.json"});
+            return Task.FromResult(new List<string>(){"V60.json", "V60.json", "V60.json", "V60.json"});
         }
 
         public Task<Method> GetMethod(string methodName)
