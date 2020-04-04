@@ -1,6 +1,6 @@
 {
     "name": "Hario V60",
-    "img" : "https://rawcdn.githack.com/andmos/Coffee/27bfd82a30bdab2cde494e57d30e9cf4745d6de0/img/V60.svg",
+    "img" : "V60",
     "recipes" : [
         {
             "name" : "Single cup, full bodied", 

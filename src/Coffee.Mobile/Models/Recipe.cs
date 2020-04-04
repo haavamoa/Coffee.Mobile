@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 
+#nullable disable
 namespace Coffee.Mobile.Models {
     public partial class Recipe
     {

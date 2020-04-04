@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"
+      encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ViewModels="clr-namespace:Coffee.Mobile.ViewModels;assembly=Coffee.Mobile"
+             xmlns:System="clr-namespace:System;assembly=netstandard"
+             mc:Ignorable="d"
+             x:Class="Coffee.Mobile.MethodDetail"
+             x:DataType="{x:Type ViewModels:MethodViewModel}">
+    <Grid Padding="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0"
+                   Grid.Column="0"
+                   Text="{Binding Name}"
+                   FontSize="30"
+                   FontAttributes="Bold" />
+            <Image Grid.Column="1"
+                   Source="{Binding Img}"
+                   HeightRequest="2" />
+        </Grid>
+        <ScrollView Grid.Row="1"
+                    Padding="15"
+                    VerticalScrollBarVisibility="Never">
+            <StackLayout BindableLayout.ItemsSource="{Binding Recipes}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Type ViewModels:RecipeViewModel}">
+                        <StackLayout>
+                            <Label Text="{Binding Name}"
+                                   FontSize="25"
+                                   FontAttributes="Bold" />
+                            <BoxView HeightRequest=".6"
+                                     BackgroundColor="LightGray" />
+                            <Label Text="Intro"
+                                   FontSize="20"
+                                   FontAttributes="Bold" />
+                            <Label Text="{Binding Introduction}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentView>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using DIPS.Xamarin.UI;
 using Foundation;
 using UIKit;
 
@@ -24,6 +24,7 @@ namespace Coffee.Mobile.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+            Library.Initialize();
 
             return base.FinishedLaunching(app, options);
         }

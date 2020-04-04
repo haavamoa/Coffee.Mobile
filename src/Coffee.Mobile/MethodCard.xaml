@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"
+      encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ViewModels="clr-namespace:Coffee.Mobile.ViewModels;assembly=Coffee.Mobile"
+             mc:Ignorable="d"
+             x:Class="Coffee.Mobile.MethodCard"
+             x:DataType="{x:Type ViewModels:MethodViewModel}">
+    <Grid Padding="50" BackgroundColor="#D9A679">
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer  Command="{Binding Source={RelativeSource AncestorType={x:Type ViewModels:MainViewModel}}, Path=SelectMethodCommand}"
+                                   CommandParameter="{Binding .}"/>
+        </Grid.GestureRecognizers>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="150" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Text="{Binding Name}"
+               FontSize="50"
+               HorizontalTextAlignment="Center" />
+        <Image Grid.Row="1"
+               Source="{Binding Img}"
+               HorizontalOptions="Center" />
+    </Grid>
+</ContentView>

@@ -19,5 +19,11 @@ namespace Coffee.Mobile
             InitializeComponent();
             BindingContext = mainViewModel;
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await ((MainViewModel)BindingContext).Initialize();
+        }
     }
 }

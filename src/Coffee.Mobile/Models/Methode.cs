@@ -3,6 +3,7 @@ using System.Globalization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
+#nullable disable
 namespace Coffee.Mobile.Models
 {
     public partial class Method
@@ -11,7 +12,7 @@ namespace Coffee.Mobile.Models
         public string Name { get; set; }
 
         [JsonProperty("img")]
-        public Uri Img { get; set; }
+        public string Img { get; set; }
 
         [JsonProperty("recipes")]
         public Recipe[] Recipes { get; set; }

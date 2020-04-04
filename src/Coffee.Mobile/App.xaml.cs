@@ -1,4 +1,5 @@
 ﻿using System;
+using DIPS.Xamarin.UI;
 using LightInject;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -9,12 +10,13 @@ namespace Coffee.Mobile
     {
         public App()
         {
+            Library.Initialize();
             InitializeComponent();
 
             var container = new ServiceContainer(new ContainerOptions { EnablePropertyInjection = false });
             container.RegisterFrom<CompositionRoot>();
 
-            MainPage = container.GetInstance<MainPage>();
+            MainPage = new NavigationPage(container.GetInstance<MainPage>());
         }
 
         protected override void OnStart()
