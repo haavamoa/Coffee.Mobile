@@ -6,7 +6,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ViewModels="clr-namespace:Coffee.Mobile.ViewModels;assembly=Coffee.Mobile"
              xmlns:System="clr-namespace:System;assembly=netstandard"
-             xmlns:Resources="clr-namespace:Coffee.Mobile.Resources;assembly=Coffee.Mobile"
+             xmlns:Resources="clr-namespace:Coffee.Mobile.Resources.Fonts;assembly=Coffee.Mobile"
              mc:Ignorable="d"
              x:Class="Coffee.Mobile.MethodDetail"
              x:DataType="{x:Type ViewModels:MethodViewModel}">
@@ -57,7 +57,7 @@
                                        TextColor="CornflowerBlue"
                                        FontSize="30"
                                        VerticalTextAlignment="Center"
-                                       FontFamily="{StaticResource MaterialFontFamily}" />
+                                       FontFamily="{x:Static Resources:MaterialDesignIcons.FontFamilyName}" />
                                 <Label Grid.Column="1"
                                        VerticalTextAlignment="Center">
                                     <Label.FormattedText>

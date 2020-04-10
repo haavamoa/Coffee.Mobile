@@ -1,7 +1,8 @@
-﻿namespace Coffee.Mobile.Resources
+﻿namespace Coffee.Mobile.Resources.Fonts
 {
-	static class MaterialDesignIcons
-	{
+    internal static class MaterialDesignIcons
+    {
+        public const string FontFamilyName = "MaterialDesignIcons";
 		public const string Numeric0 = "\u0030";
 		public const string Numeric1 = "\u0031";
 		public const string Numeric2 = "\u0032";

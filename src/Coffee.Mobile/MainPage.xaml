@@ -27,7 +27,7 @@
         <CollectionView ItemsSource="{Binding Methods}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="{x:Type ViewModels:MethodViewModel}">
-                    <Mobile:MethodCard BindingContext="{Binding .}" />
+                    <Mobile:MethodCard BindingContext="{Binding .}"/>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
