@@ -1,5 +1,7 @@
 # Coffee.Mobile
 A native mobile client to display coffee recipies and hints from https://github.com/andmos/Coffee
+This app will let you select different recipies and give you a simple overview of how you can make the coffee.
+
 
 ## Iterations
 
