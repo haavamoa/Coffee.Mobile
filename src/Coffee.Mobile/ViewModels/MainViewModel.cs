@@ -35,9 +35,11 @@ namespace Coffee.Mobile.ViewModels
         public async Task Initialize()
         {
             var methods = await m_coffeeService.GetAvailableMethods();
+
             foreach (var methodName in methods)
             {
                 var method = await m_coffeeService.GetMethod(methodName);
+
                 Methods.Add(m_methodViewModelFactory.Invoke(method));
             }
         }
@@ -63,4 +65,5 @@ namespace Coffee.Mobile.ViewModels
 #nullable disable
         public event PropertyChangedEventHandler PropertyChanged;
     }
+#nullable enable
 }
